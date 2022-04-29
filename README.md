@@ -12,7 +12,7 @@ It contains modules that can not easily be upstreamed.
 Based on: amazon.aws.aws_s3
 
 Additional features:
-*TODO*
+* Support writing S3 objects with inline contents, to allow rendering Jinja templates without writing to local disk
 
 ## Legal
 
