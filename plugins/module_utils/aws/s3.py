@@ -54,6 +54,10 @@ def calculate_etag_content(module, content, etag, s3, bucket, obj, version=None)
     if not HAS_MD5:
         return None
 
+    if isinstance(content, str):
+        # we accept strings, but need to convert them to bytes first
+        content = content.encode('utf-8')
+
     if '-' in etag:
         # Multi-part ETag; a hash of the hashes of each part.
         parts = int(etag[1:-1].split('-')[1])
