@@ -1,0 +1,21 @@
+namespace: swisstxt
+name: awsext
+version: 1.0.0
+readme: README.md
+authors:
+- Gregor Riepl <gregor.riepl@swisstxt.ch>
+
+description: Extension modules to the official amazon.aws collection.
+license: GPL-3.0-or-later
+tags: []
+dependencies:
+  amazon.aws: ">=1.0.0"
+repository: https://github.com/swisstxt/ansible-collection-awsext
+issues: https://github.com/swisstxt/ansible-collection-awsext/issues
+
+# A list of file glob-like patterns used to filter any files or directories that should not be included in the build
+# artifact. A pattern is matched from the relative path of the file or directory of the collection directory. This
+# uses 'fnmatch' to match the files or directories. Some directories and files like 'galaxy.yml', '*.pyc', '*.retry',
+# and '.git' are always filtered
+build_ignore: []
+
