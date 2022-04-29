@@ -300,9 +300,9 @@ import io
 from ansible.module_utils.six.moves.urllib.parse import urlparse
 from ssl import SSLError
 from ansible.module_utils.basic import to_text, to_native
-from ansible_collections.ansible.amazon.plugins.module_utils.aws.core import AnsibleAWSModule
-from ansible_collections.ansible.amazon.plugins.module_utils.aws.s3 import calculate_etag, calculate_etag_content, HAS_MD5
-from ansible_collections.ansible.amazon.plugins.module_utils.ec2 import get_aws_connection_info, boto3_conn
+from ansible_collections.amazon.aws.plugins.module_utils.core import AnsibleAWSModule
+from ansible_collections.amazon.aws.plugins.module_utils.ec2 import get_aws_connection_info, boto3_conn
+from ansible_collections.swisstxt.awsext.plugins.module_utils.aws.s3 import calculate_etag, calculate_etag_content, HAS_MD5
 
 try:
     import botocore
